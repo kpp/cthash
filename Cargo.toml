@@ -1,0 +1,22 @@
+[package]
+name = "cthash"
+edition = "2024"
+version = "0.9.0"
+rust-version = "1.88" # MSRV
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/kpp/cthash"
+authors = [
+    "Roman Proskuryakov <r.proskuryakoff@gmail.com>",
+]
+description = """const fn implementation of hash functions including
+MD4, MD5, SHA-1, SHA-2, SHA-3, Keccak"""
+categories = ["cryptography", "no-std", "algorithms"]
+keywords = ["crypto", "hash", "digest"]
+
+[dev-dependencies]
+const-hex = "1"
+sha1 = "0.10"
+sha2 = "0.10"
+sha3 = "0.10"
+md-5 = "0.10"
+md4 = "0.10"

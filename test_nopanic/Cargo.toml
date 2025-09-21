@@ -1,0 +1,19 @@
+[package]
+name = "test_nopanic"
+version = "0.0.0"
+publish = false
+edition = "2024"
+description = "check if there are any panics left in the linked binary"
+
+[dependencies]
+cthash = { path = ".." }
+no-panic = "0.1"
+
+[profile.dev]
+lto = "thin"
+opt-level = 1
+codegen-units = 1
+debug-assertions = false
+
+[profile.release]
+lto = "thin"
